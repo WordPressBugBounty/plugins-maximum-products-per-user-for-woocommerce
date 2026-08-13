@@ -1,9 +1,9 @@
 === Maximum Products per User for WooCommerce ===
 Contributors: wpcodefactory, omardabbas, karzin, anbinder, kousikmukherjeeli
 Tags: woocommerce, product quantity, limits, quantity restriction, order restriction
-Requires at least: 4.4
-Tested up to: 6.9
-Stable tag: 4.4.7
+Requires at least: 5.7
+Tested up to: 7.0
+Stable tag: 4.5.2
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -273,6 +273,45 @@ Please report security bugs found in the source code of the plugin through the [
 Once activated, access the plugin's settings by navigating to "WooCommerce > Settings" and look for the relevant tab.
 
 == Changelog ==
+
+= 4.5.2 - 11/08/2026 =
+* Fix - Tools > Fixed data recalculation.
+* Fix - Shortcodes - Security - Improved output escaping.
+* Fix - Shortcodes - Security - Improved input sanitization.
+* Fix - Security - Added nonce verification.
+* Fix - Tools - Fixed the updated data notice.
+* Dev - Added the WooCommerce plugin dependency.
+* Dev - WPFactory Cross-Selling - Library updated (to v1.1.3).
+* Dev - WPFactory Admin Menu - Library updated (to v1.1.2).
+* Dev - WPFactory Promoting Notice - Library updated (to v1.0.7).
+* Dev - WPFactory Key Manager - Library updated (to v1.0.9).
+* WC tested up to: 11.0.
+
+= 4.5.1 - 22/07/2026 =
+* Fix - Guests - Fixed possible error with "Block guests from buying products" on some sites where the value is stored as array.
+* Fix - Guests - Fixed unidentified guests sharing purchase limits.
+* Fix - Core - `get_product_remaining_qty()` cache key now includes user ID to prevent cross-user result leaking.
+* Dev - Added prefix to AJAX action.
+
+= 4.5.0 - 06/07/2026 =
+* Dev - Security - Improved output escaping.
+* Dev - Security - Improved input sanitization.
+* Dev - Security - Added nonce verification.
+* Dev - `wpfmppu_is_product_blocked_for_guests_by_limit_options` filter added.
+* Dev - `wpfmppu_check_quantities_guest_limits` filter added.
+* Dev - `wpfmppu_get_max_qty_for_product` filter added.
+* Dev - `wpfmppu_check_quantities_for_product_valid` filter added.
+* Dev - `wpfmppu_skip_all_products_for_product` filter added.
+* Dev - Coding standards improved.
+* Dev - Added `composer.json` file.
+* Dev - WPFactory Cross-Selling - Library updated (to v1.1.2).
+* Dev - WPFactory Admin Menu - Library updated (to v1.1.1).
+* Dev - WPFactory Key Manager - Library updated (to v1.0.8).
+* WC tested up to: 10.9.
+* Requires at least: 5.7.
+
+= 4.4.8 - 22/05/2026 =
+* Tested up to: 7.0.
 
 = 4.4.7 - 23/04/2026 =
 * Dev - Advanced - Added new option "Date to check" so the "alg_wc_mppu_date_to_check" filter may be used to override date range.
